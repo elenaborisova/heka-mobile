@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"/>
+    <meta name="og:type" content="website"/>
+    <meta name="twitter:card" content="photo"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/care-task-planning-1.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/styleguide.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/globals.css"/>
+</head>
+<body style="margin: 0; background: #ffffff">
+<input type="hidden" id="anPageName" name="page" value="care-task-planning-1"/>
+<div class="container-center-horizontal">
+    <div class="care-task-planning-1 screen">
+        <div class="status-bar">
+            <div class="time sfprotext-normal-black-15px">9:27</div>
+            <div class="connections">
+                <img class="cellular-connection" src="../static/img/cellular-connection-2@2x.svg"/>
+                <img class="wifi" src="../static/img/wifi-2@2x.svg"/>
+                <div class="battery">
+                    <div class="overlap-group border-1px-black-2">
+                        <div class="capacity"></div>
+                    </div>
+                    <img class="cap" src="../static/img/cap@2x.svg"/>
+                </div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="care-task-planning inter-semi-bold-black-16px">Care Task Planning</div>
+            <a href="{{ url_for('home') }}"><img class="shape" src="../static/img/shape@2x.svg"/> </a>
+        </div>
+
+
+        <form action="/task-planning" method="POST">
+            <div class="overlap-group3">
+                <div class="group-4">
+                    <div class="overlap-group-1">
+                        <div class="input-android-text-o">
+                            {#                        <div class="master-data opensans-semi-bold-teal-blue-12px">Master Data</div>#}
+                        </div>
+
+                        <input name="first-name" type="text" class="first-name-form opensans-semi-bold-teal-blue-12px"
+                               placeholder="First Name" required>
+                        <input name="last-name" type="text" class="last-name-form opensans-semi-bold-teal-blue-12px"
+                               placeholder="Last Name" required>
+
+                        {#                        <div class="borisova-elena opensans-normal-black-15px">Borisova, Elena</div>#}
+                        <input name="room" type="number" class="room-form opensans-semi-bold-teal-blue-12px"
+                               placeholder="No." required>
+                        {#                        <p class="address opensans-bold-black-14px">12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</p>#}
+                        <input name="bed" type="number" class="bed-form opensans-semi-bold-teal-blue-12px"
+                               placeholder="No." required>
+                        <p class="room-bed opensans-normal-black-10px">Room&nbsp;&nbsp;&nbsp;&nbsp;Bed</p>
+
+
+                    </div>
+                </div>
+
+                <div class="patient opensans-normal-black-24px">Patient</div>
+                <div class="listbox-component">
+                    <div class="list-box-title">
+                        <div class="diagnosis opensans-normal-mine-shaft-16px">Diagnosis</div>
+                    </div>
+
+
+                    <div class="list-container">
+                        <label for="diagnosis"></label>
+                        <select name="diagnosis" class="list-box-main select" id="diagnosis">
+
+                            <option class="placeholder-text" value="">Select Diagnosis</option>
+                            <option class="item clip-list dropdown-list" value="Hip fracture">Hip fracture</option>
+                            <option class="item clip-list dropdown-list" value="Concussion">Concussion
+                            </option>
+                            <option class="item clip-list dropdown-list" value="Rib Fracture">Rib Fracture
+                            </option>
+                            <option class="item clip-list dropdown-list" value="Arthritis">Arthritis</option>
+                        </select>
+                    </div>
+                    {#                    <div class="list-box-main">#}
+                    {#                        <div class="placeholder-text">#}
+                    {#                            <div class="select">Select Diagnosis</div>#}
+                    {#                        </div>#}
+                    {#                        <img class="chevron" src="../static/img/chevron@2x.svg"/>#}
+                    {#                    </div>#}
+                    {#                    <div class="clip-list">#}
+                    {#                        <div class="dropdown-list">#}
+                    {#                            <div class="item-1">#}
+                    {#                                <div class="x1 opensans-normal-mine-shaft-16px">Hip fracture</div>#}
+                    {#                            </div>#}
+                    {#                            <div class="item">#}
+                    {#                                <div class="x2 opensans-normal-mine-shaft-16px">Concussion</div>#}
+                    {#                            </div>#}
+                    {#                            <div class="item">#}
+                    {#                                <div class="x3 opensans-normal-mine-shaft-16px">Rib Fracture</div>#}
+                    {#                            </div>#}
+                    {#                            <div class="item">#}
+                    {#                                <div class="x4 opensans-normal-mine-shaft-16px">Arthritis</div>#}
+                    {#                            </div>#}
+                    {#                        </div>#}
+                    {#                    </div>#}
+                    {#                </div>#}
+
+                    <div class="listbox-component-1">
+                        <div class="list-box-title">
+                            <div class="risk-factors opensans-normal-mine-shaft-16px">Risk Factors</div>
+                        </div>
+                        <div class="list-container">
+                            <label for="risk-factor"></label>
+                            <select name="risk-factor" class="list-box-main select" id="risk-factor">
+
+                                <option class="placeholder-text" value="">Select Risk Factors</option>
+                                <option class="item clip-list dropdown-list" value="Dementia">Dementia</option>
+                                <option class="item clip-list dropdown-list" value="Strong medication">Strong medication
+                                </option>
+                                <option class="item clip-list dropdown-list" value="Self harm">Self harm
+                                </option>
+                                <option class="item clip-list dropdown-list" value="Low food intake">Low food intake
+                                </option>
+                            </select>
+                        </div>
+
+                        {#                        #}
+                        {#                        <div class="list-box-main">#}
+                        {#                            <div class="placeholder-text">#}
+                        {#                                <div class="select">Select Risk Factors</div>#}
+                        {#                            </div>#}
+                        {#                            <img class="chevron" src="../static/img/chevron@2x.svg"/>#}
+                        {#                        </div>#}
+                        {#                        <div class="clip-list">#}
+                        {#                            <div class="dropdown-list">#}
+                        {#                                <div class="item-1">#}
+                        {#                                    <div class="x1-1 opensans-normal-mine-shaft-16px">Dementia</div>#}
+                        {#                                </div>#}
+                        {#                                <div class="item">#}
+                        {#                                    <div class="x2-1 opensans-normal-mine-shaft-16px">Strong medication</div>#}
+                        {#                                </div>#}
+                        {#                                <div class="item">#}
+                        {#                                    <div class="x3-1 opensans-normal-mine-shaft-16px">Self harm</div>#}
+                        {#                                </div>#}
+                        {#                                <div class="item">#}
+                        {#                                    <div class="x4-1 opensans-normal-mine-shaft-16px">Low food intake</div>#}
+                        {#                                </div>#}
+                        {#                            </div>#}
+                        {#                        </div>#}
+                        {#                    </div>#}
+                        <button class="submit-button" type="submit">Register</button>
+                        {#                    <input class="submit-button" type="submit" value="Register">#}
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

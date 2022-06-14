@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"/>
+    <meta name="og:type" content="website"/>
+    <meta name="twitter:card" content="photo"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/home-screen.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/styleguide.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/globals.css"/>
+</head>
+<body style="margin: 0; background: #ffffff">
+<input type="hidden" id="anPageName" name="page" value="home-screen"/>
+<div class="container-center-horizontal">
+    <div class="home-screen screen">
+        <div class="status-bar">
+            <div class="time sfprotext-normal-black-15px">9:27</div>
+            <div class="connections">
+                <img class="cellular-connection" src="../static/img/cellular-connection@2x.svg"/>
+                <img class="wifi" src="../static/img/wifi@2x.svg"/>
+                <div class="battery">
+                    <div class="overlap-group border-1px-black-2">
+                        <div class="capacity"></div>
+                    </div>
+                    <img class="cap" src="../static/img/cap@2x.svg"/>
+                </div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="place inter-semi-bold-black-16px">Home</div>
+            <img class="shape" src="../static/img/shape@2x.svg"/>
+        </div>
+        <div class="overlap-group1 opensans-normal-black-24px">
+            <img class="group-1" src="../static/img/group-1@2x.svg"/>
+            <div class="rectangle-3"></div>
+            <ul class="patients-elements">
+                {% for patient in patients %}
+                    <li>
+s
+                        <div class="master-person-button">
+                            <a class="click" href="{{ url_for('patient_overview', patient=patient.first_name) }}">
+                                <div class="dummy-dummy opensans-normal-black-15px">{{ patient.last_name }}, {{ patient.first_name }}</div>
+                            </a>
+                            <div class="flex-col">
+                                <p class="x07-2 opensans-bold-black-14px">{{ patient.room }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ patient.bed }}</p>
+                                <p class="room-bed opensans-normal-black-10px">Room&nbsp;&nbsp;&nbsp;&nbsp;Bed</p>
+                            </div>
+                        </div>
+
+                    </li>
+                {% endfor %}
+            </ul>
+            {#          <div class="master-person-button-1">#}
+            {#            <div class="dummy-dummy opensans-normal-black-15px">Groth, Paulina</div>#}
+            {#            <div class="flex-col">#}
+            {#              <p class="x07-2 opensans-bold-black-14px">03&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</p>#}
+            {#              <p class="room-bed opensans-normal-black-10px">Room&nbsp;&nbsp;&nbsp;&nbsp;Bed</p>#}
+            {#            </div>#}
+            {#          </div>#}
+            {#          <div class="master-person-button-2">#}
+            {#            <div class="dummy-dummy opensans-normal-black-15px">Creyghton, Lara</div>#}
+            {#            <div class="flex-col">#}
+            {#              <p class="x07-2 opensans-bold-black-14px">09&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</p>#}
+            {#              <p class="room-bed opensans-normal-black-10px">Room&nbsp;&nbsp;&nbsp;&nbsp;Bed</p>#}
+            {#            </div>#}
+            {#          </div>#}
+            {#          <div class="master-person-button-3">#}
+            {#            <div class="dummy-dummy opensans-normal-black-15px">Meyers, Maxine</div>#}
+            {#            <div class="flex-col">#}
+            {#              <p class="x07-2 opensans-bold-black-14px">05&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</p>#}
+            {#              <p class="room-bed opensans-normal-black-10px">Room&nbsp;&nbsp;&nbsp;&nbsp;Bed</p>#}
+            {#            </div>#}
+            {#          </div>#}
+            <h1 class="title">Your patients</h1>
+            <div class="next-patient">Next Patient</div>
+            <div class="input-android-text-o">
+                <div class="flex-col-1">
+                    <div class="patient-name opensans-normal-black-15px">Meyers, Maxine</div>
+                    <div class="button-container">
+                        <div class="room-04-button">
+                            <div class="room-04 valign-text-middle opensans-normal-black-10px">Room 04</div>
+                        </div>
+                        <div class="bed-button">
+                            <div class="bed-3 opensans-normal-black-10px">Bed 3</div>
+                        </div>
+                    </div>
+                    <div class="diagnosis">Diagnosis:</div>
+                    <div class="diagnosis-button">
+                        <div class="hip-fracture opensans-normal-black-10px">Hip fracture</div>
+                    </div>
+                </div>
+                <div class="flex-col-2">
+                    <div class="next-tasks">Next Tasks:</div>
+                    <div class="medicine-intake opensans-normal-black-9px">Medicine Intake</div>
+                    <div class="pain-assesment opensans-normal-black-9px">Pain Assessment</div>
+                    <div class="vitals-measurement opensans-normal-black-9px">Vitals Measurement</div>
+                </div>
+            </div>
+            <div class="ellipse-1"></div>
+            <img class="qr-code-scan-1" src="../static/img/qr-code-scan-1@2x.svg"/>
+        </div>
+        <a href="{{ url_for('task_planning') }}">
+            <div class="button-android-fab-extended-roboto">
+                <img class="icon-android-24-add-plus" src="../static/img/icon---android---24---add-plus@2x.svg"/>
+                <div class="add-patient">Add Patient</div>
+            </div>
+        </a>
+    </div>
+</div>
+</body>
+</html>
