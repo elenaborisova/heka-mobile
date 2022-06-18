@@ -16,12 +16,12 @@ engine = create_engine(SQLALCHEMY_DATABASE_URI)
 
 @app.route('/')
 def index():
-    return 'Helloooo'
+    return render_template('first.html')
 
 
 @app.route('/home')
 def home():
-    return render_template('home.html', patients=fetch_patients_diagnosis())
+    return render_template('list-patients.html', patients=fetch_patients_diagnosis())
 
 
 @app.route('/patient-overview/<patient>')

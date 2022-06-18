@@ -1,0 +1,133 @@
+/* screen - log-in */
+
+.log-in {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 812px;
+  overflow: hidden;
+  width: 375px;
+}
+
+.log-in .status-bar {
+  align-items: center;
+  display: flex;
+  height: 44px;
+  justify-content: flex-end;
+  min-width: 375px;
+  padding: 0 14px;
+}
+
+.log-in .time {
+  letter-spacing: -0.33px;
+  min-height: 18px;
+  text-align: center;
+  width: 54px;
+}
+
+.log-in .connections {
+  align-items: flex-start;
+  display: flex;
+  height: 16px;
+  justify-content: flex-end;
+  margin-left: 218px;
+  margin-top: 2.0px;
+  min-width: 68px;
+  padding: 1.8px 0;
+}
+
+.log-in .icon-bar_chart {
+  height: 11px;
+  margin-top: 0.17px;
+  width: 17px;
+}
+
+.log-in .wifi {
+  height: 11px;
+  margin-left: 5px;
+  width: 15px;
+}
+
+.log-in .battery {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  height: 12px;
+  margin-left: 5px;
+  min-width: 25px;
+  padding: 0.3px 0.0px;
+}
+
+.log-in .overlap-group {
+  align-items: flex-start;
+  border-radius: 2.67px;
+  display: flex;
+  height: 11px;
+  min-width: 22px;
+  padding: 1.0px 1.0px;
+}
+
+.log-in .capacity {
+  background-color: var(--black);
+  border-radius: 1.33px;
+  height: 7px;
+  width: 18px;
+}
+
+.log-in .cap {
+  align-self: center;
+  height: 4px;
+  margin-left: 1px;
+  width: 1px;
+}
+
+.log-in .image-container {
+  height: 605px;
+  margin-left: -11.5px;
+  position: relative;
+  width: 375px;
+}
+
+.log-in .image-2 {
+  height: 537px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 68px;
+  width: 375px;
+}
+
+.log-in .image-2-1 {
+  height: 119px;
+  left: 158px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 82px;
+}
+
+.log-in .button {
+  align-items: flex-start;
+  align-self: center;
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  height: 52px;
+  margin-top: 81px;
+  min-width: 167px;
+  padding: 16px 59px;
+}
+
+.log-in .log-in-1 {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: 13px;
+  font-weight: 900;
+  height: 15px;
+  letter-spacing: 0.52px;
+  min-width: 44px;
+  text-align: center;
+}

@@ -428,9 +428,9 @@
     left: 251px;
     min-width: 109px;
     padding: 5.5px 13px;
-    position: fixed;
     top: 308px;
     z-index: 4;
+    position: absolute;
 }
 
 .home-screen .icon-android-24-add-plus {

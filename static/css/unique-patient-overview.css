@@ -1,436 +1,640 @@
 /* screen - unique-patient-overview */
 
 .unique-patient-overview {
-  align-items: flex-end;
-  background-color: var(--white);
-  display: flex;
-  flex-direction: column;
-  height: 812px;
-  overflow: hidden;
-  width: 375px;
+    align-items: flex-end;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 812px;
+    overflow: hidden;
+    width: 375px;
 }
 
 .unique-patient-overview .status-bar {
-  align-items: center;
-  display: flex;
-  height: 44px;
-  justify-content: flex-end;
-  min-width: 375px;
-  padding: 0 14px;
+    align-items: center;
+    display: flex;
+    height: 44px;
+    justify-content: flex-end;
+    min-width: 375px;
+    padding: 0 14px;
 }
 
 .unique-patient-overview .time {
-  letter-spacing: -0.33px;
-  min-height: 18px;
-  text-align: center;
-  width: 54px;
+    letter-spacing: -0.33px;
+    min-height: 18px;
+    text-align: center;
+    width: 54px;
 }
 
 .unique-patient-overview .connections {
-  align-items: flex-start;
-  display: flex;
-  height: 16px;
-  justify-content: flex-end;
-  margin-left: 218px;
-  margin-top: 2.0px;
-  min-width: 68px;
-  padding: 1.8px 0;
+    align-items: flex-start;
+    display: flex;
+    height: 16px;
+    justify-content: flex-end;
+    margin-left: 218px;
+    margin-top: 2.0px;
+    min-width: 68px;
+    padding: 1.8px 0;
 }
 
 .unique-patient-overview .cellular-connection {
-  height: 11px;
-  margin-top: 0.17px;
-  width: 17px;
+    height: 11px;
+    margin-top: 0.17px;
+    width: 17px;
 }
 
 .unique-patient-overview .wifi {
-  height: 11px;
-  margin-left: 5px;
-  width: 15px;
+    height: 11px;
+    margin-left: 5px;
+    width: 15px;
 }
 
 .unique-patient-overview .battery {
-  align-items: flex-start;
-  align-self: center;
-  display: flex;
-  height: 12px;
-  margin-left: 5px;
-  min-width: 25px;
-  padding: 0.3px 0.0px;
+    align-items: flex-start;
+    align-self: center;
+    display: flex;
+    height: 12px;
+    margin-left: 5px;
+    min-width: 25px;
+    padding: 0.3px 0.0px;
 }
 
 .unique-patient-overview .overlap-group {
-  align-items: flex-start;
-  border-radius: 2.67px;
-  display: flex;
-  height: 11px;
-  min-width: 22px;
-  padding: 1.0px 1.0px;
+    align-items: flex-start;
+    border-radius: 2.67px;
+    display: flex;
+    height: 11px;
+    min-width: 22px;
+    padding: 1.0px 1.0px;
 }
 
 .unique-patient-overview .capacity {
-  background-color: var(--black);
-  border-radius: 1.33px;
-  height: 7px;
-  width: 18px;
+    background-color: var(--black);
+    border-radius: 1.33px;
+    height: 7px;
+    width: 18px;
 }
 
 .unique-patient-overview .cap {
-  align-self: center;
-  height: 4px;
-  margin-left: 1px;
-  width: 1px;
+    align-self: center;
+    height: 4px;
+    margin-left: 1px;
+    width: 1px;
 }
 
 .unique-patient-overview .flex-row {
-  align-items: center;
-  display: flex;
-  height: 19px;
-  margin-right: 11px;
-  margin-top: 2px;
-  min-width: 246px;
+    align-items: center;
+    display: flex;
+    height: 19px;
+    margin-right: 11px;
+    margin-top: 2px;
+    min-width: 246px;
 }
 
 .unique-patient-overview .patient-overview {
-  letter-spacing: 0;
-  min-height: 19px;
-  min-width: 133px;
-  text-align: center;
+    letter-spacing: 0;
+    min-height: 19px;
+    min-width: 133px;
+    text-align: center;
 }
 
 .unique-patient-overview .shape {
-  cursor: pointer;
-  height: 14px;
-  margin-bottom: 1.0px;
-  margin-left: 94px;
-  width: 19px;
+    cursor: pointer;
+    height: 14px;
+    margin-bottom: 1.0px;
+    margin-left: 94px;
+    width: 19px;
 }
 
 .unique-patient-overview .overlap-group3 {
-  height: 710px;
-  margin-right: 2px;
-  margin-top: 14px;
-  position: relative;
-  width: 375px;
+    height: 710px;
+    margin-right: 2px;
+    margin-top: 14px;
+    position: relative;
+    width: 375px;
 }
 
 .unique-patient-overview .group-1 {
-  height: 27px;
-  left: 33px;
-  position: absolute;
-  top: 683px;
-  width: 319px;
+    height: 27px;
+    left: 33px;
+    position: absolute;
+    top: 683px;
+    width: 319px;
 }
 
 .unique-patient-overview .rectangle-3 {
-  background-color: var(--seashell);
-  height: 653px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 375px;
+    background-color: var(--seashell);
+    height: 653px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 375px;
 }
 
 .unique-patient-overview .care-task-history {
-  color: var(--black);
-  font-family: var(--font-family-open_sans);
-  font-size: var(--font-size-m);
-  font-weight: 600;
-  left: 18px;
-  letter-spacing: 0.15px;
-  position: absolute;
-  text-align: center;
-  top: 171px;
-  width: 151px;
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+    left: 18px;
+    letter-spacing: 0.15px;
+    position: absolute;
+    text-align: center;
+    top: 171px;
+    width: 151px;
 }
 
 .unique-patient-overview .next-care-tasks {
-  color: var(--black);
-  font-family: var(--font-family-open_sans);
-  font-size: var(--font-size-m);
-  font-weight: 600;
-  left: 12px;
-  letter-spacing: 0.15px;
-  position: absolute;
-  text-align: center;
-  top: 347px;
-  width: 151px;
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+    left: 12px;
+    letter-spacing: 0.15px;
+    position: absolute;
+    text-align: center;
+    top: 347px;
+    width: 151px;
 }
 
 .unique-patient-overview .input-android-text-o {
-  align-items: flex-start;
-  background-color: var(--white);
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px #00000040;
-  display: flex;
-  height: 146px;
-  left: 23px;
-  min-width: 337px;
-  padding: 7.9px 8px;
-  position: absolute;
-  top: 11px;
+    align-items: flex-start;
+    background-color: var(--white);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px #00000040;
+    display: flex;
+    height: 146px;
+    left: 23px;
+    min-width: 337px;
+    padding: 7.9px 8px;
+    position: absolute;
+    top: 11px;
 }
 
 .unique-patient-overview .flex-col {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  min-height: 110px;
-  width: 166px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    min-height: 110px;
+    width: 166px;
 }
 
 .unique-patient-overview .patient-name {
-  letter-spacing: 0.15px;
-  line-height: 24px;
-  margin-left: 2px;
-  min-height: 25px;
-  white-space: nowrap;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    margin-left: 2px;
+    min-height: 25px;
+    white-space: nowrap;
 }
 
 .unique-patient-overview .button-container {
-  align-items: flex-start;
-  display: flex;
-  margin-top: 7px;
-  min-width: 101px;
+    align-items: flex-start;
+    display: flex;
+    margin-top: 7px;
+    min-width: 101px;
 }
 
 .unique-patient-overview .room-04-button {
-  align-items: flex-start;
-  background-color: var(--scooter);
-  border-radius: 250px;
-  display: flex;
-  height: 22px;
-  justify-content: flex-end;
-  min-width: 54px;
-  padding: 3px 5px;
+    align-items: flex-start;
+    background-color: var(--scooter);
+    border-radius: 250px;
+    display: flex;
+    height: 22px;
+    justify-content: flex-end;
+    min-width: 54px;
+    padding: 3px 5px;
 }
 
 .unique-patient-overview .room-04 {
-  height: 14px;
-  letter-spacing: 0.15px;
+    height: 14px;
+    letter-spacing: 0.15px;
 }
 
 .unique-patient-overview .bed-button {
-  align-items: flex-start;
-  background-color: var(--scooter);
-  border-radius: 250px;
-  display: flex;
-  height: 22px;
-  margin-left: 10px;
-  min-width: 37px;
-  padding: 0 4px;
+    align-items: flex-start;
+    background-color: var(--scooter);
+    border-radius: 250px;
+    display: flex;
+    height: 22px;
+    margin-left: 10px;
+    min-width: 37px;
+    padding: 0 4px;
 }
 
 .unique-patient-overview .bed-3 {
-  letter-spacing: 0.15px;
-  line-height: 24px;
-  margin-top: -2px;
-  min-height: 24px;
-  white-space: nowrap;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    margin-top: -2px;
+    min-height: 24px;
+    white-space: nowrap;
 }
 
 .unique-patient-overview .diagnosis {
-  color: var(--black);
-  font-family: var(--font-family-open_sans);
-  font-size: var(--font-size-xxxs);
-  font-weight: 600;
-  letter-spacing: 0.15px;
-  line-height: 24px;
-  margin-left: 2px;
-  margin-top: 9px;
-  min-height: 25px;
-  white-space: nowrap;
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xxxs);
+    font-weight: 600;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    margin-left: 2px;
+    margin-top: 9px;
+    min-height: 25px;
+    white-space: nowrap;
 }
 
 .unique-patient-overview .diagnosis-button {
-  align-items: flex-start;
-  background-color: #ebd5104c;
-  border-radius: 250px;
-  display: flex;
-  height: 22px;
-  margin-top: 1px;
-  min-width: 95px;
-  padding: 3px 6px;
+    align-items: flex-start;
+    background-color: #ebd5104c;
+    border-radius: 250px;
+    display: flex;
+    height: 22px;
+    margin-top: 1px;
+    min-width: 95px;
+    padding: 3px 6px;
 }
 
 .unique-patient-overview .hip-fracture {
-  letter-spacing: 0.15px;
-  min-height: 14px;
-  text-align: center;
-  width: 83px;
+    letter-spacing: 0.15px;
+    min-height: 14px;
+    text-align: center;
+    width: 83px;
 }
 
 .unique-patient-overview .master-data {
-  align-self: flex-end;
-  letter-spacing: 0.15px;
-  line-height: 24px;
-  margin-bottom: 25.12px;
-  margin-left: 62px;
-  min-height: 24px;
-  min-width: 73px;
-  white-space: nowrap;
+    align-self: flex-end;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    margin-bottom: 25.12px;
+    margin-left: 62px;
+    min-height: 24px;
+    min-width: 73px;
+    white-space: nowrap;
 }
 
 .unique-patient-overview .ellipse-1 {
-  background-color: #0bbff8;
-  border-radius: 40px;
-  box-shadow: 0px 4px 4px #00000040;
-  height: 80px;
-  left: 153px;
-  position: absolute;
-  top: 605px;
-  width: 80px;
+    background-color: #0bbff8;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 80px;
+    left: 153px;
+    position: absolute;
+    top: 605px;
+    width: 80px;
 }
 
 .unique-patient-overview .color {
-  height: 35px;
-  left: 177px;
-  position: absolute;
-  top: 628px;
-  width: 35px;
+    height: 35px;
+    left: 177px;
+    position: absolute;
+    top: 628px;
+    width: 35px;
 }
 
 .unique-patient-overview .overlap-group1 {
-  align-items: flex-start;
-  background-color: var(--white);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  left: 20px;
-  min-height: 59px;
-  padding: 8px 59px;
-  position: absolute;
-  top: 275px;
-  width: 337px;
+    align-items: flex-start;
+    background-color: var(--white);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    min-height: 59px;
+    padding: 8px 59px;
+    position: absolute;
+    top: 275px;
+    width: 337px;
 }
 
 .unique-patient-overview .food-intake {
-  color: var(--black);
-  font-family: var(--font-family-open_sans);
-  font-size: var(--font-size-xxs);
-  font-weight: 400;
-  letter-spacing: 0.15px;
-  margin-left: 3px;
-  min-height: 16px;
-  min-width: 68px;
-  text-align: center;
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xxs);
+    font-weight: 400;
+    letter-spacing: 0.15px;
+    margin-left: 3px;
+    min-height: 16px;
+    min-width: 68px;
+    text-align: center;
 }
 
 .unique-patient-overview .date {
-  color: var(--black);
-  font-family: var(--font-family-open_sans);
-  font-size: var(--font-size-xxs);
-  font-weight: 300;
-  letter-spacing: 0.15px;
-  margin-top: 5px;
-  min-height: 16px;
-  min-width: 65px;
-  text-align: center;
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xxs);
+    font-weight: 300;
+    letter-spacing: 0.15px;
+    margin-top: 5px;
+    min-height: 16px;
+    min-width: 65px;
+    text-align: center;
 }
 
 .unique-patient-overview .see-full-history {
-  left: 261px;
-  letter-spacing: 0.15px;
-  line-height: 24px;
-  position: absolute;
-  top: 170px;
-  white-space: nowrap;
+    left: 261px;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    position: absolute;
+    top: 170px;
+    white-space: nowrap;
 }
 
 .unique-patient-overview .overlap-group2 {
-  align-items: flex-start;
-  background-color: var(--white);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  left: 19px;
-  min-height: 59px;
-  padding: 8px 57px;
-  position: absolute;
-  top: 204px;
-  width: 337px;
+    align-items: flex-start;
+    background-color: var(--white);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    left: 19px;
+    min-height: 59px;
+    padding: 8px 57px;
+    position: absolute;
+    top: 204px;
+    width: 337px;
 }
 
 .unique-patient-overview .repositioning {
-  color: var(--black);
-  font-family: var(--font-family-open_sans);
-  font-size: var(--font-size-xxs);
-  font-weight: 400;
-  letter-spacing: 0.15px;
-  min-height: 16px;
-  min-width: 79px;
-  text-align: center;
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xxs);
+    font-weight: 400;
+    letter-spacing: 0.15px;
+    min-height: 16px;
+    min-width: 79px;
+    text-align: center;
 }
 
 .unique-patient-overview .date-1 {
-  color: var(--black);
-  font-family: var(--font-family-open_sans);
-  font-size: var(--font-size-xxs);
-  font-weight: 300;
-  letter-spacing: 0.15px;
-  margin-left: 2px;
-  margin-top: 5px;
-  min-height: 16px;
-  min-width: 65px;
-  text-align: center;
+    color: var(--black);
+    font-family: var(--font-family-open_sans);
+    font-size: var(--font-size-xxs);
+    font-weight: 300;
+    letter-spacing: 0.15px;
+    margin-left: 2px;
+    margin-top: 5px;
+    min-height: 16px;
+    min-width: 65px;
+    text-align: center;
 }
 
 .unique-patient-overview .overlap-group-1 {
-  align-items: flex-end;
-  background-color: var(--white);
-  border-radius: 4px;
-  display: flex;
-  height: 59px;
-  left: 19px;
-  min-width: 337px;
-  padding: 18px 67px;
-  position: absolute;
-  top: 379px;
+    align-items: flex-end;
+    background-color: var(--white);
+    border-radius: 4px;
+    display: flex;
+    height: 59px;
+    left: 19px;
+    min-width: 337px;
+    padding: 18px 67px;
+    position: absolute;
+    top: 379px;
 }
 
 .unique-patient-overview .medicine-intake {
-  letter-spacing: 0.15px;
-  min-height: 22px;
-  min-width: 121px;
-  text-align: center;
+    letter-spacing: 0.15px;
+    min-height: 22px;
+    min-width: 121px;
+    text-align: center;
 }
 
 .unique-patient-overview .overlap-group-2 {
-  align-items: flex-end;
-  background-color: var(--white);
-  border-radius: 4px;
-  display: flex;
-  height: 59px;
-  left: 20px;
-  min-width: 337px;
-  padding: 18px 67px;
-  position: absolute;
-  top: 450px;
+    align-items: flex-end;
+    background-color: var(--white);
+    border-radius: 4px;
+    display: flex;
+    height: 59px;
+    left: 20px;
+    min-width: 337px;
+    padding: 18px 67px;
+    position: absolute;
+    top: 450px;
 }
 
 .unique-patient-overview .pain-assesment {
-  letter-spacing: 0.15px;
-  min-height: 22px;
-  min-width: 120px;
-  text-align: center;
+    letter-spacing: 0.15px;
+    min-height: 22px;
+    min-width: 120px;
+    text-align: center;
 }
 
 .unique-patient-overview .overlap-group-3 {
-  align-items: flex-end;
-  background-color: var(--white);
-  border-radius: 4px;
-  display: flex;
-  height: 59px;
-  left: 20px;
-  min-width: 337px;
-  padding: 18px 67px;
-  position: absolute;
-  top: 521px;
+    align-items: flex-end;
+    background-color: var(--white);
+    border-radius: 4px;
+    display: flex;
+    height: 59px;
+    left: 20px;
+    min-width: 337px;
+    padding: 18px 67px;
+    position: absolute;
+    top: 521px;
 }
 
 .unique-patient-overview .vitals-measurement {
-  letter-spacing: 0.15px;
-  min-height: 22px;
-  min-width: 152px;
-  text-align: center;
+    letter-spacing: 0.15px;
+    min-height: 22px;
+    min-width: 152px;
+    text-align: center;
+}
+
+/*.fancy-checkbox input[type="checkbox"],*/
+/*.custom-checkbox .checked {*/
+/*  display: none;*/
+/*}*/
+
+/*!*.custom-checkbox input[type="checkbox"]:checked~.checked {*!*/
+/*!*  display: inline-block;*!*/
+/*!*}*!*/
+/*.custom-checkbox input[type="checkbox"]:checked~.unchecked {*/
+/*  display: none;*/
+/*}*/
+
+#checklist {
+    --background: #fff;
+    --text: #414856;
+    --check: #4f29f0;
+    --disabled: #c3c8de;
+    --width: 100px;
+    --height: 140px;
+    --border-radius: 10px;
+    background: var(--background);
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
+    padding: 30px 45px;
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+    position: initial;
+}
+
+#checklist label {
+    color: var(--text);
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    width: fit-content;
+    transition: color 0.3s ease;
+}
+
+#checklist label::before, #checklist label::after {
+    content: "";
+    position: absolute;
+}
+
+#checklist label::before {
+    height: 2px;
+    width: 8px;
+    left: -27px;
+    background: var(--check);
+    border-radius: 2px;
+    transition: background 0.3s ease;
+}
+
+#checklist label:after {
+    height: 4px;
+    width: 4px;
+    top: 8px;
+    left: -25px;
+    border-radius: 50%;
+}
+
+#checklist input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    outline: none;
+    border: 0;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+    background: var(--background);
+    display: grid;
+    align-items: center;
+}
+
+#checklist input[type="checkbox"]::before, #checklist input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: auto;
+    background: var(--check);
+    border-radius: 2px;
+}
+
+#checklist input[type="checkbox"]::before {
+    width: 0px;
+    right: 60%;
+    transform-origin: right bottom;
+}
+
+#checklist input[type="checkbox"]::after {
+    width: 0px;
+    left: 40%;
+    transform-origin: left bottom;
+}
+
+#checklist input[type="checkbox"]:checked::before {
+    animation: check-01 0.4s ease forwards;
+}
+
+#checklist input[type="checkbox"]:checked::after {
+    animation: check-02 0.4s ease forwards;
+}
+
+#checklist input[type="checkbox"]:checked + label {
+    color: var(--disabled);
+    animation: move 0.3s ease 0.1s forwards;
+}
+
+#checklist input[type="checkbox"]:checked + label::before {
+    background: var(--disabled);
+    animation: slice 0.4s ease forwards;
+}
+
+#checklist input[type="checkbox"]:checked + label::after {
+    animation: firework 0.5s ease forwards 0.1s;
+}
+
+@keyframes move {
+    50% {
+        padding-left: 8px;
+        padding-right: 0px;
+    }
+    100% {
+        padding-right: 4px;
+    }
+}
+
+@keyframes slice {
+    60% {
+        width: 100%;
+        left: 4px;
+    }
+    100% {
+        width: 100%;
+        left: -2px;
+        padding-left: 0;
+    }
+}
+
+@keyframes check-01 {
+    0% {
+        width: 4px;
+        top: auto;
+        transform: rotate(0);
+    }
+    50% {
+        width: 0px;
+        top: auto;
+        transform: rotate(0);
+    }
+    51% {
+        width: 0px;
+        top: 8px;
+        transform: rotate(45deg);
+    }
+    100% {
+        width: 5px;
+        top: 8px;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes check-02 {
+    0% {
+        width: 4px;
+        top: auto;
+        transform: rotate(0);
+    }
+    50% {
+        width: 0px;
+        top: auto;
+        transform: rotate(0);
+    }
+    51% {
+        width: 0px;
+        top: 8px;
+        transform: rotate(-45deg);
+    }
+    100% {
+        width: 10px;
+        top: 8px;
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes firework {
+    0% {
+        opacity: 1;
+        box-shadow: 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0, 0 0 0 -2px #4f29f0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        box-shadow: 0 -15px 0 0px #4f29f0, 14px -8px 0 0px #4f29f0, 14px 8px 0 0px #4f29f0, 0 15px 0 0px #4f29f0, -14px 8px 0 0px #4f29f0, -14px -8px 0 0px #4f29f0;
+    }
 }

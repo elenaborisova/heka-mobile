@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
-    <meta name="og:type" content="website" />
-    <meta name="twitter:card" content="photo" />
-    <link rel="stylesheet" type="text/css" href="../static/css/unique-patient-overview.css" />
-    <link rel="stylesheet" type="text/css" href="../static/css/styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="../static/css/globals.css" />
-  </head>
-  <body style="margin: 0; background: #ffffff">
-    <input type="hidden" id="anPageName" name="page" value="unique-patient-overview" />
-    <div class="container-center-horizontal">
-      <div class="unique-patient-overview screen">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png"/>
+    <meta name="og:type" content="website"/>
+    <meta name="twitter:card" content="photo"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/unique-patient-overview.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/styleguide.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/globals.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="margin: 0; background: #ffffff">
+<input type="hidden" id="anPageName" name="page" value="unique-patient-overview"/>
+<div class="container-center-horizontal">
+    <div class="unique-patient-overview screen">
         <div class="status-bar">
-          <div class="time sfprotext-normal-black-15px">9:27</div>
-          <div class="connections">
-            <img class="cellular-connection" src="../static/img/cellular-connection-1@2x.svg" />
-            <img class="wifi" src="../static/img/wifi-1@2x.svg" />
-            <div class="battery">
-              <div class="overlap-group border-1px-black-2">
-                <div class="capacity"></div>
-              </div>
-              <img class="cap" src="../static/img/cap@2x.svg" />
+            <div class="time sfprotext-normal-black-15px">9:27</div>
+            <div class="connections">
+                <img class="cellular-connection" src="../static/img/cellular-connection-1@2x.svg"/>
+                <img class="wifi" src="../static/img/wifi-1@2x.svg"/>
+                <div class="battery">
+                    <div class="overlap-group border-1px-black-2">
+                        <div class="capacity"></div>
+                    </div>
+                    <img class="cap" src="../static/img/cap@2x.svg"/>
+                </div>
             </div>
-          </div>
         </div>
         <div class="flex-row">
-          <div class="patient-overview inter-semi-bold-black-16px">Patient Overview</div>
-          <a href="{{ url_for('home') }}"><img class="shape" src="../static/img/shape@2x.svg" /> </a>
+            <div class="patient-overview inter-semi-bold-black-16px">Patient Overview</div>
+            <a href="{{ url_for('home') }}"><img class="shape" src="../static/img/shape@2x.svg"/> </a>
         </div>
         <div class="overlap-group3">
-          <img class="group-1" src="../static/img/group-1@2x.svg" />
-          <div class="rectangle-3"></div>
-          <div class="care-task-history">Care Task History</div>
-          <div class="next-care-tasks">Next Care Tasks</div>
-          <div class="input-android-text-o">
-            <div class="flex-col">
-              <div class="patient-name opensans-normal-black-15px">{{ patient.last_name }}, {{ patient.first_name }}</div>
-              <div class="button-container">
-                <div class="room-04-button">
-                  <div class="room-04 valign-text-middle opensans-normal-black-10px">Room {{ patient.room }}</div>
+            <img class="group-1" src="../static/img/group-1@2x.svg"/>
+            <div class="rectangle-3"></div>
+            <div class="care-task-history">Care Task History</div>
+            <div class="next-care-tasks">Next Care Tasks</div>
+            <div class="input-android-text-o">
+                <div class="flex-col">
+                    <div class="patient-name opensans-normal-black-15px">{{ patient.last_name }}, {{ patient.first_name }}</div>
+                    <div class="button-container">
+                        <div class="room-04-button">
+                            <div class="room-04 valign-text-middle opensans-normal-black-10px">
+                                Room {{ patient.room }}</div>
+                        </div>
+                        <div class="bed-button">
+                            <div class="bed-3 opensans-normal-black-10px">Bed {{ patient.bed }}</div>
+                        </div>
+                    </div>
+                    <div class="diagnosis">Diagnosis:</div>
+                    <div class="diagnosis-button">
+                        <div class="hip-fracture opensans-normal-black-10px">{{ patient.diagnosis }}</div>
+                    </div>
                 </div>
-                <div class="bed-button"><div class="bed-3 opensans-normal-black-10px">Bed {{ patient.bed }}</div></div>
-              </div>
-              <div class="diagnosis">Diagnosis:</div>
-              <div class="diagnosis-button">
-                <div class="hip-fracture opensans-normal-black-10px">{{ patient.diagnosis }}</div>
-              </div>
+                <div class="master-data opensans-semi-bold-teal-blue-12px">Master Data</div>
             </div>
-            <div class="master-data opensans-semi-bold-teal-blue-12px">Master Data</div>
-          </div>
-          <div class="ellipse-1"></div>
-          <img class="color" src="../static/img/--color@2x.svg" />
-          <div class="overlap-group1">
-            <div class="food-intake">Food Intake</div>
-            <div class="date">15/06/2022</div>
-          </div>
-          <div class="see-full-history opensans-semi-bold-teal-blue-12px">See Full History</div>
-          <div class="overlap-group2">
-            <div class="repositioning">Repositioning</div>
-            <div class="date-1">15/06/2022</div>
-          </div>
-          <div class="overlap-group-1">
-            <div class="medicine-intake opensans-normal-black-16px">Medicine Intake</div>
-          </div>
-          <div class="overlap-group-2"><div class="pain-assesment opensans-normal-black-16px">Pain Assesment</div></div>
-          <div class="overlap-group-3">
-            <div class="vitals-measurement opensans-normal-black-16px">Vitals measurement</div>
-          </div>
+            <div class="ellipse-1"></div>
+            <img class="color" src="../static/img/--color@2x.svg"/>
+            <div class="overlap-group1">
+                <div class="food-intake">Food Intake</div>
+                <div class="date">15/06/2022</div>
+            </div>
+            <div class="see-full-history opensans-semi-bold-teal-blue-12px">See Full History</div>
+            <div class="overlap-group2">
+                <div class="repositioning">Repositioning</div>
+                <div class="date-1">15/06/2022</div>
+            </div>
+            <div id="checklist">
+                <div class="overlap-group-1">
+                    <input id="01" type="checkbox" name="r" value="1" checked>
+                    <label for="01">Medicine Intake</label>
+                </div>
+                <div class="overlap-group-2">
+                    <input id="02" type="checkbox" name="r" value="2">
+                    <label for="02">Pain Assesment</label>
+                </div>
+                <div class="overlap-group-3">
+                    <input id="03" type="checkbox" name="r" value="3">
+                    <label for="03">Vitals measurement</label>
+                </div>
+            </div>
+
+
+            {#                <div class="medicine-intake opensans-normal-black-16px">Medicine Intake</div>#}
+            {#                <label class="custom-checkbox">#}
+            {#                    <input type="checkbox"/>#}
+            {#                <i class="fa-solid fa-check"></i>#}
+            {##}
+            {#                <i class="fa fa-car"></i>#}
+            {#                </label>#}
+
+            {#            <div class="overlap-group-2">#}
+            {#                <div class="pain-assesment opensans-normal-black-16px">Pain Assesment</div>#}
+            {#            </div>#}
+            {#            <div class="overlap-group-3">#}
+            {#                <div class="vitals-measurement opensans-normal-black-16px">Vitals measurement</div>#}
+            {#            </div>#}
         </div>
-      </div>
     </div>
-  </body>
+</div>
+</body>
 </html>
